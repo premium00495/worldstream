@@ -252,7 +252,7 @@
         // Fetch stream URLs from server (EXACT ORIGINAL LOGIC)
         async function getStreamUrls() {
             try {
-                const response = await fetch('/api/streams');
+                const response = await fetch('/api/streams.js');
                 const data = await response.json();
                 return data.urls;
             } catch (error) {
